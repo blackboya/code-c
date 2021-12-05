@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main ()
+{
+	int n,i,one,two,five;
+	scanf ("%d",&n);
+	for (one=1;one<n*10;one++)
+	{
+		for (two=1;two<n*10/2;two++)
+		{
+			for (five=1;five<n*10/5;five++)
+			if (one+two*2+five*5==n*10)
+			printf ("可以用%d个一角和%d个两角和%d个五角组成\n",one,two,five);
+		}
+	}
+	return 0;
+}
